@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+body,h1,h2,ul,p,figure{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: outside none none;
+}
+a{
+    text-decoration: none;
+}
+.hidden{
+    display: none;
+}
+#header{
+    width: 100%;
+    min-width:1263px;
+    height: 70px;
+    background-color: #333;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 10;
+}
+#header .center{
+    width: 1263px;
+    height: 70px;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+#header .logo{
+    width: 240px;
+    height: 70px;
+    background-image: url('../imgs/logo1.jpg');
+    /*首行缩进往左就看不见了*/
+    text-indent: -2000px;
+    float: left;
+}
+#header .link{
+    /*background-color: red;*/
+    float: right;
+    width: 650px;
+    height: 70px;
+    line-height: 70px;
+    color: #eee;
+}
+#header .link li{
+    float: left;
+    width: 120px;
+    text-align: center;
+}
+#header .link a{
+    color: #eee;
+    /*background-color: blue;*/
+    display: inline-block;
+}
+#header .link li:hover,
+#header .link .active{
+    background-color: black;
+}
+
+#search{
+    width: 100%;
+    min-width:1263px;
+    height: 400px;
+    background:url("../imgs/bg1.jpg") no-repeat center;
+    position: relative;
+}
+#search .center{
+    width: 600px;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -300px;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+#search .search{
+    width: 446px;
+    height: 52px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -27px 0 0 -296px;
+    background-color: cyan;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 10px;
+    font-size: 24px;
+    padding:0 10px;
+    /*取消焦点边框显示*/
+    outline: none;
+}
+#search .button{
+    width: 120px;
+    height: 54px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -27px 0 0 175px;
+    background-color: cyan;
+    color: #666;
+    border: 1px solid #666;
+    border-radius: 10px;
+    font-size: 24px;
+    /*悬停手型*/
+    cursor: pointer;
+    font-weight: bold;
+    /*取消焦点边框显示*/
+    outline: none;
+}
+
+#tour{
+    width: 1263px;
+    height: 1250px;
+    /*background-color: cyan;*/
+    margin: 30px auto;
+    text-align: center;
+}
+/*#tour .center{*/
+    /*text-align: center;*/
+/*}*/
+#tour .center h2{
+    font-size: 45px;
+    letter-spacing:2px;
+    color: #666;
+    margin: 10px 0;
+}
+#tour .center p{
+    color: #666;
+    margin: 10px 0;
+
+}
+
+#tour figure{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 15px 12px;
+    width: 380px;
+    position: relative;
+}
+#tour figure img{
+    vertical-align: middle;
+    width: 380px;
+}
+#tour figure figcaption{
+    text-align: left;
+    color: #777;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height:1.5;
+    padding: 7px 0 5px 0;
+}
+#tour .sat{
+    float: right;
+    font-size: 13px;
+    color: #999;
+    font-style: normal;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+#tour .price{
+    float: left;
+    color: #f60;
+    font-size: 14px;
+}
+#tour .price strong{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#tour .type{
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: #59b200;
+    color: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+#footer{
+    height: 360px;
+    background-color: #222;
+}
+#footer .top{
+    width: 1263px;
+    height: 280px;
+    margin: 0 auto;
+    /*background-color: red;*/
+    text-align: center;
+}
+
+/*共有样式提取出来*/
+#footer .block{
+    width: 410px;
+    height: 280px;
+    /*background-color: red;*/
+    display: inline-block;
+    color: #ccc;
+    text-align: left;
+    vertical-align: top;
+}
+#footer a:hover{
+    color: #555;
+}
+#footer a{
+    color: #777;
+}
+#footer h2{
+    font-size: 24px;
+    font-weight: normal;
+    padding: 20px 0 0 20px;
+}
+#footer hr{
+    width:90%;
+    border: 1px dashed #333;
+}
+#footer ul{
+    font-size: 18px;
+    color: #777;
+    text-indent: 20px;
+    line-height:2;
+}
+
+#footer .left{
+
+}
+#footer .center{
+
+}
+#footer .right{
+
+}
+
+#footer .bottom{
+    height: 80px;
+    background-color: #000;
+    line-height: 80px;
+    text-align: center;
+    color: #777;
+    border-top: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
